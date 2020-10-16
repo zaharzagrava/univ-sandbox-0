@@ -17,7 +17,7 @@ create table department (
   full_address varchar(255) unique not null,
 );
 -- 
-create TABLE client_task (
+create TABLE client_department (
   id bigserial primary key,
   client_id bigint not null references client(id) ON DELETE CASCADE,
   department_id bigint not null references department(id) ON DELETE CASCADE,
